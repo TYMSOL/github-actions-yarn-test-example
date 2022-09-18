@@ -1,6 +1,11 @@
 name: Test Package
 
-on: [push]
+on: 
+ push:
+   branches:
+      - 'fix/*'
+      - 'feature/*'
+ workflow_dispatch:
 
 jobs:
   test:
